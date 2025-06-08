@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Ram krishna Sarkar and I'm a  Studednt, from Adamas university</h2>
+<h2 align="left">Hi 👋! My name is Ram krishna Sarkar and I'm a  Student, from Adamas university</h2>
 
 ###
 
