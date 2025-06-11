@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="chatbox">
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-bubble assistant">
+                Hello! I’m your Weather Assistant 🌦️<br> Ask me about any city's weather!
+                <span class="tick">✔✔</span>
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Ask about the weather..." autocomplete="off">
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+    
+
     <main>
         <form>
             <input type="text" id="name" autocomplete="off">
@@ -16,10 +30,9 @@
             </button>
         </form>
         <section class="result">
-
             <figure class="name">
                 <figcaption>KOLKATA</figcaption> 
-                <img src="https://flagsapi.com/GB/shiny/32.png">
+                <img src="https://flagsapi.com/IN/shiny/32.png">
             </figure>
 
             <figure class="temperature">
