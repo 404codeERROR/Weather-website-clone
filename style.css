@@ -1,22 +1,18 @@
-body{
+body {
     margin: 0;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-image: 
-        linear-gradient(
-            to bottom,
-            #dcdcdc 50%,
-            #e9e9e9 50%
-        );
+    background-image: linear-gradient(to bottom, #dcdcdc 50%, #e9e9e9 50%);
     font-family: sans-serif;
+    padding-top: 250px;
 }
-*{
+* {
     padding: 0;
     margin: 0;
 }
-main{
+main {
     width: 300px;
     height: max-content;
     min-height: 300px;
@@ -26,28 +22,28 @@ main{
     padding: 30px;
     box-sizing: border-box;
 }
-main form{
+main form {
     border: 1px solid #5552;
     display: flex;
     border-radius: 30px;
     justify-content: space-between;
 }
-main form input, 
-main form button{
+main form input,
+main form button {
     border: none;
     background-color: transparent;
     outline: none;
     padding: 10px;
     box-sizing: border-box;
 }
-main form i{
+main form i {
     opacity: 0.7;
 }
-main .result{
+main .result {
     padding-top: 20px;
     text-align: center;
 }
-main .result .name{
+main .result .name {
     font-weight: bold;
     font-size: large;
     display: flex;
@@ -55,63 +51,121 @@ main .result .name{
     align-items: center;
     gap: 10px;
 }
-main .temperature img{
+main .temperature img {
     width: 150px;
     filter: drop-shadow(0 10px 50px #555);
 }
-main .temperature figcaption{
+main .temperature figcaption {
     font-size: 3em;
 }
-main .description{
+main .description {
     padding: 10px 0 30px;
 }
-main ul{
+main ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-main li{
+main li {
     background-color: #f78a55;
     color: #fff;
     border-radius: 10px;
     padding: 20px 10px;
-    background-image: linear-gradient(
-        to bottom,
-        transparent 50%,
-        #0003 50%
-    );
+    background-image: linear-gradient(to bottom, transparent 50%, #0003 50%);
     font-weight: bold;
     font-size: small;
 }
-main ul li i{
+main ul li i {
     font-size: 2em;
     margin: 20px 0;
-    display: block!important;
+    display: block !important;
 }
-main li:nth-child(2){
+main li:nth-child(2) {
     background-color: #b56291;
 }
-main li:nth-child(3){
+main li:nth-child(3) {
     background-color: #48567b;
 }
-main.error{
+main.error {
     animation: errorEffect 0.3s linear 1;
 }
-@keyframes errorEffect{
-    0%{
+@keyframes errorEffect {
+    0% {
         transform: translate(10px, 5px)
     }
-    25%{
+    25% {
         transform: translate(-5px, 0)
     }
-    50%{
+    50% {
         transform: translate(8px, 2px)
     }
-    75%{
+    75% {
         transform: translate(-2px, 5px)
     }
-    100%{
-        transform: translate(0, 0); 
+    100% {
+        transform: translate(0, 0)
     }
+}
+
+/* Chatbox */
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #aaa;
+    padding: 10px;
+    z-index: 1000;
+}
+.chat-messages {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-bubble {
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+    max-width: 80%;
+    position: relative;
+}
+.chat-bubble.assistant {
+    background: #d0e8ff;
+    align-self: flex-start;
+}
+.chat-bubble.user {
+    background: #dcf8c6;
+    align-self: flex-end;
+    margin-left: auto;
+}
+.tick {
+    font-size: 0.8em;
+    color: #007bff;
+    float: right;
+    margin-left: 10px;
+}
+#chat-form {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#chat-form button {
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #007bff;
 }
