@@ -2,7 +2,7 @@
 
 ##### 
 📸 Preview
-Weather Website Screenshot!(![image](https://github.com/user-attachments/assets/ef6772b5-edba-4806-9059-811e646af33b)
+Weather Website Screenshot(![image](https://github.com/user-attachments/assets/ef6772b5-edba-4806-9059-811e646af33b)
 
 
 ## 🚀 Live Demo
