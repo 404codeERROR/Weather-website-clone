@@ -1,7 +1,7 @@
 <h2 align="left">Hi 👋! My name is Ram krishna Sarkar and I'm a  Student, from Adamas university</h2>
 ##### 
 📸 Preview
-Weather Website Screenshot(![image](https://github.com/user-attachments/assets/ef6772b5-edba-4806-9059-811e646af33b)
+Weather Website Screenshot ![Screenshot 2025-06-26 010544](https://github.com/user-attachments/assets/2aeaf9e1-886e-44de-9072-22f88ee1bed0)
 
 
 ## 🚀 Live Demo
