@@ -2,11 +2,11 @@
 
 ##### 
 📸 Preview
-Weather Website Screenshot![image](https://github.com/user-attachments/assets/8237b93d-b838-4866-a096-8a8ee7a065d5)
+Weather Website Screenshot!(![image](https://github.com/user-attachments/assets/ef6772b5-edba-4806-9059-811e646af33b)
 
 
 ## 🚀 Live Demo
-[Click to view the website](https://404codeerror.github.io/Holi-Website/)
+[Click to view the website](https://404codeerror.github.io/Weather-website-clone/)
  
 ###
 
